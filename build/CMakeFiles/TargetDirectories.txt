@@ -1,0 +1,6 @@
+/home/student/ClassAssignments/build/CMakeFiles/OpenGL_GLFW_Demo.dir
+/home/student/ClassAssignments/build/CMakeFiles/edit_cache.dir
+/home/student/ClassAssignments/build/CMakeFiles/rebuild_cache.dir
+/home/student/ClassAssignments/build/external/glad/CMakeFiles/glad.dir
+/home/student/ClassAssignments/build/external/glad/CMakeFiles/edit_cache.dir
+/home/student/ClassAssignments/build/external/glad/CMakeFiles/rebuild_cache.dir
