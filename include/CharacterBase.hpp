@@ -1,7 +1,7 @@
 class CharacterBase
 {
     public:
-    CharacterBase()
+    CharacterBase();
     virtual~CharacterBase() = default;
 
     virtual void Create();
@@ -14,9 +14,9 @@ class CharacterBase
     virtual void Shot() abstruct;
     virtual void Draw() abstruct;
 
-    private:
+    protected:
     static constexpr int MAX_HP = 3;
-    static constexpr int BULLET_NUM = 3;
+    static constexpr int BULLET_NUM = 5;
 
     int m_posX;
     int m_posY;
