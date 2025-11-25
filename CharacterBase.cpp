@@ -1,0 +1,21 @@
+#include "CharacterBase.hpp"
+
+CharacterBase()
+:m_hp(0),
+m_isActive(false),
+m_isShot(false),
+m_posX(0),
+m_posY(0),
+m_velocity(0),
+{};
+
+~CharacterBase(){};
+
+void CharacterBase::Initialize()
+{
+    m_isActive = true;
+    m_isShot   = false;
+    m_hp       = MAX_HP;
+    m_posX     = 0;
+    m_posY     = 0;
+}
