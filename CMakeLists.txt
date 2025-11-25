@@ -8,6 +8,10 @@ add_subdirectory(external/glad)
 find_package(glfw3 REQUIRED)
 find_package(OpenGL REQUIRED)
 
+include_directories(include)
+
+file(GLOB SOURCES "src/*.cpp")
+
 add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE glfw glad ${OPENGL_LIBRARIES})
 target_include_directories(${PROJECT_NAME} PRIVATE external/glad/include)

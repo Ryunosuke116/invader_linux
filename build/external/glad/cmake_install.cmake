@@ -1,4 +1,4 @@
-# Install script for directory: /home/student/ClassAssignments/external/glad
+# Install script for directory: /home/emiyan/invader_linux/external/glad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

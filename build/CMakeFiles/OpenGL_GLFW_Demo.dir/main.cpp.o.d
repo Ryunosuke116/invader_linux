@@ -1,7 +1,7 @@
 CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o: \
- /home/student/ClassAssignments/main.cpp /usr/include/stdc-predef.h \
- /home/student/ClassAssignments/external/glad/include/glad/glad.h \
- /home/student/ClassAssignments/external/glad/include/KHR/khrplatform.h \
+ /home/emiyan/invader_linux/main.cpp /usr/include/stdc-predef.h \
+ /home/emiyan/invader_linux/external/glad/include/glad/glad.h \
+ /home/emiyan/invader_linux/external/glad/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -75,7 +75,8 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o: \
  /usr/include/bits/types/clockid_t.h /usr/include/bits/types/timer_t.h \
  /usr/include/bits/types/struct_itimerspec.h \
  /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
- /usr/include/bits/pthreadtypes-arch.h /usr/include/bits/struct_mutex.h \
+ /usr/include/bits/pthreadtypes-arch.h \
+ /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/bits/setjmp.h \
  /usr/include/bits/types/__sigset_t.h \
  /usr/include/bits/types/struct___jmp_buf_tag.h \
@@ -130,4 +131,5 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc
+ /usr/include/c++/11/bits/istream.tcc \
+ /home/emiyan/invader_linux/include/triangle.h
