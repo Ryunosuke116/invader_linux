@@ -16,7 +16,7 @@ class CharacterBase
 
     protected:
     static constexpr int MAX_HP = 3;
-    static constexpr int BULLET_NUM = 5;
+    static constexpr int BULLET_NUM = 6;
 
     int m_posX;
     int m_posY;
