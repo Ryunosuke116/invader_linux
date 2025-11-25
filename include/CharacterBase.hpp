@@ -16,11 +16,13 @@ class CharacterBase
 
     private:
     static constexpr int MAX_HP = 3;
+    static constexpr int BULLET_NUM = 3;
+
     int m_posX;
     int m_posY;
     int m_velocity;
     int m_hp;
     bool m_isActive;
-    bool m_isShot;
+    bool m_isShot[BULLET_NUM];
 
 }
