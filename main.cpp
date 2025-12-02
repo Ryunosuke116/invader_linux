@@ -63,8 +63,8 @@ int main() {
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
 
     GLint shader = makeShader();
-    std::shared_ptr<Render> render = std::make_shared<Render>();
-    render->Initialize("png/free-png-4.png");
+    //std::shared_ptr<Render> render = std::make_shared<Render>();
+    //render->Initialize("png/free-png-4.png");
     
     //メインループ
     while (!glfwWindowShouldClose(window)) {
@@ -77,7 +77,7 @@ int main() {
 		// VBOに格納されたpointsデータの0番目から描画し、3頂点分だけ描画する
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 
-        render->Update("png/free-png-4.png");
+       // render->Update("png/free-png-4.png");
 
         glfwSwapBuffers(window);
         glfwPollEvents();
