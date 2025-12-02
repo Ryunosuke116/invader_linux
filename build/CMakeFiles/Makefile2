@@ -98,12 +98,12 @@ external/glad/clean: external/glad/CMakeFiles/glad.dir/clean
 CMakeFiles/OpenGL_GLFW_Demo.dir/all: external/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=1,2 "Built target OpenGL_GLFW_Demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=1,2,3,4 "Built target OpenGL_GLFW_Demo"
 .PHONY : CMakeFiles/OpenGL_GLFW_Demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OpenGL_GLFW_Demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emiyan/invader_linux/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emiyan/invader_linux/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OpenGL_GLFW_Demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/emiyan/invader_linux/build/CMakeFiles 0
 .PHONY : CMakeFiles/OpenGL_GLFW_Demo.dir/rule
@@ -124,7 +124,7 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/clean:
 external/glad/CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=3,4 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=5,6 "Built target glad"
 .PHONY : external/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.

@@ -1,7 +1,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <fstream>
+#include <memory>
 #include "triangle.h"
+#include "Render.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
@@ -60,7 +63,9 @@ int main() {
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
 
     GLint shader = makeShader();
-
+    std::shared_ptr<Render> render = std::make_shared<Render>();
+    render->Initialize("png/free-png-4.png");
+    
     //メインループ
     while (!glfwWindowShouldClose(window)) {
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -71,6 +76,8 @@ int main() {
         // 現在選択されているシェーダーで、VAO上のオブジェクトを描画する
 		// VBOに格納されたpointsデータの0番目から描画し、3頂点分だけ描画する
 		glDrawArrays(GL_TRIANGLES, 0, 3);
+
+        render->Update("png/free-png-4.png");
 
         glfwSwapBuffers(window);
         glfwPollEvents();

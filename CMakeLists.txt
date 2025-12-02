@@ -12,6 +12,6 @@ include_directories(include)
 
 file(GLOB SOURCES "src/*.cpp")
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} main.cpp ${SOURCES})
 target_link_libraries(${PROJECT_NAME} PRIVATE glfw glad ${OPENGL_LIBRARIES})
 target_include_directories(${PROJECT_NAME} PRIVATE external/glad/include)

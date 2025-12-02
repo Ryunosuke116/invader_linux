@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o -o OpenGL_GLFW_Demo  /usr/lib64/libglfw.so.3.4 external/glad/libglad.a /usr/lib64/libGL.so /usr/lib64/libGLU.so 
+/usr/bin/c++ CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o -o OpenGL_GLFW_Demo  /usr/lib64/libglfw.so.3.4 external/glad/libglad.a /usr/lib64/libGL.so /usr/lib64/libGLU.so 

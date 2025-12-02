@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/emiyan/invader_linux/main.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o.d"
+  "/home/emiyan/invader_linux/src/Render.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o.d"
+  "/home/emiyan/invader_linux/src/triangle.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

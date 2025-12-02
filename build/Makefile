@@ -166,6 +166,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Render.o: src/Render.cpp.o
+.PHONY : src/Render.o
+
+# target to build an object file
+src/Render.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o
+.PHONY : src/Render.cpp.o
+
+src/Render.i: src/Render.cpp.i
+.PHONY : src/Render.i
+
+# target to preprocess a source file
+src/Render.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.i
+.PHONY : src/Render.cpp.i
+
+src/Render.s: src/Render.cpp.s
+.PHONY : src/Render.s
+
+# target to generate assembly for a file
+src/Render.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.s
+.PHONY : src/Render.cpp.s
+
+src/triangle.o: src/triangle.cpp.o
+.PHONY : src/triangle.o
+
+# target to build an object file
+src/triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o
+.PHONY : src/triangle.cpp.o
+
+src/triangle.i: src/triangle.cpp.i
+.PHONY : src/triangle.i
+
+# target to preprocess a source file
+src/triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.i
+.PHONY : src/triangle.cpp.i
+
+src/triangle.s: src/triangle.cpp.s
+.PHONY : src/triangle.s
+
+# target to generate assembly for a file
+src/triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.s
+.PHONY : src/triangle.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,6 +227,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Render.o"
+	@echo "... src/Render.i"
+	@echo "... src/Render.s"
+	@echo "... src/triangle.o"
+	@echo "... src/triangle.i"
+	@echo "... src/triangle.s"
 .PHONY : help
 
 
