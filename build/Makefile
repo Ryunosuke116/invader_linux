@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emiyan/invader_linux
+CMAKE_SOURCE_DIR = /home/Yante/invader_linux
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emiyan/invader_linux/build
+CMAKE_BINARY_DIR = /home/Yante/invader_linux/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emiyan/invader_linux/build/CMakeFiles /home/emiyan/invader_linux/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Yante/invader_linux/build/CMakeFiles /home/Yante/invader_linux/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emiyan/invader_linux/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Yante/invader_linux/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -214,6 +214,30 @@ src/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.s
 .PHONY : src/Enemy.cpp.s
 
+src/Object2D.o: src/Object2D.cpp.o
+.PHONY : src/Object2D.o
+
+# target to build an object file
+src/Object2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Object2D.cpp.o
+.PHONY : src/Object2D.cpp.o
+
+src/Object2D.i: src/Object2D.cpp.i
+.PHONY : src/Object2D.i
+
+# target to preprocess a source file
+src/Object2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Object2D.cpp.i
+.PHONY : src/Object2D.cpp.i
+
+src/Object2D.s: src/Object2D.cpp.s
+.PHONY : src/Object2D.s
+
+# target to generate assembly for a file
+src/Object2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Object2D.cpp.s
+.PHONY : src/Object2D.cpp.s
+
 src/Player.o: src/Player.cpp.o
 .PHONY : src/Player.o
 
@@ -262,6 +286,30 @@ src/Render.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.s
 .PHONY : src/Render.cpp.s
 
+src/texture2D.o: src/texture2D.cpp.o
+.PHONY : src/texture2D.o
+
+# target to build an object file
+src/texture2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/texture2D.cpp.o
+.PHONY : src/texture2D.cpp.o
+
+src/texture2D.i: src/texture2D.cpp.i
+.PHONY : src/texture2D.i
+
+# target to preprocess a source file
+src/texture2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/texture2D.cpp.i
+.PHONY : src/texture2D.cpp.i
+
+src/texture2D.s: src/texture2D.cpp.s
+.PHONY : src/texture2D.s
+
+# target to generate assembly for a file
+src/texture2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/texture2D.cpp.s
+.PHONY : src/texture2D.cpp.s
+
 src/triangle.o: src/triangle.cpp.o
 .PHONY : src/triangle.o
 
@@ -305,12 +353,18 @@ help:
 	@echo "... src/Enemy.o"
 	@echo "... src/Enemy.i"
 	@echo "... src/Enemy.s"
+	@echo "... src/Object2D.o"
+	@echo "... src/Object2D.i"
+	@echo "... src/Object2D.s"
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
 	@echo "... src/Render.o"
 	@echo "... src/Render.i"
 	@echo "... src/Render.s"
+	@echo "... src/texture2D.o"
+	@echo "... src/texture2D.i"
+	@echo "... src/texture2D.s"
 	@echo "... src/triangle.o"
 	@echo "... src/triangle.i"
 	@echo "... src/triangle.s"

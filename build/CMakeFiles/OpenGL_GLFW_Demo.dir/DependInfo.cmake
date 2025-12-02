@@ -8,12 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/emiyan/invader_linux/main.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o.d"
-  "/home/emiyan/invader_linux/src/CharacterBase.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o.d"
-  "/home/emiyan/invader_linux/src/Enemy.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o.d"
-  "/home/emiyan/invader_linux/src/Player.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o.d"
-  "/home/emiyan/invader_linux/src/Render.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o.d"
-  "/home/emiyan/invader_linux/src/triangle.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o.d"
+  "/home/Yante/invader_linux/main.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o.d"
+  "/home/Yante/invader_linux/src/CharacterBase.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o.d"
+  "/home/Yante/invader_linux/src/Enemy.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o.d"
+  "/home/Yante/invader_linux/src/Object2D.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Object2D.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Object2D.cpp.o.d"
+  "/home/Yante/invader_linux/src/Player.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o.d"
+  "/home/Yante/invader_linux/src/Render.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o.d"
+  "/home/Yante/invader_linux/src/texture2D.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/texture2D.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/texture2D.cpp.o.d"
+  "/home/Yante/invader_linux/src/triangle.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -9,8 +9,10 @@ class Enemy : public CharacterBase
 
     void Update() override;
 
+    void Move() override;
+
     void  Draw() override;
 
     private:
-
+    static constexpr float MAX_MOVE_SPEED = 2.0f;
 };

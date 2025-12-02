@@ -1,5 +1,5 @@
 #pragma once
-
+#include <vector>
 
 class CharacterBase
 {
@@ -11,11 +11,11 @@ public:
 
     virtual void Initialize();
 
-    virtual void Update() {};
+    virtual void Update() =0;
 
-    virtual void Move() {};
+    virtual void Move() = 0;
     virtual void Shot() {};
-    virtual void Draw() {};
+    virtual void Draw() =0;
 
 protected:
     static constexpr int MAX_HP = 3;
@@ -26,6 +26,8 @@ protected:
     int m_velocity;
     int m_hp;
     bool m_isActive;
+    bool m_is_right;
+    bool m_is_left;
     bool m_isShot[BULLET_NUM];
 
 };
