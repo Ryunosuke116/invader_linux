@@ -1,6 +1,6 @@
-/home/Yante/invader_linux/build/CMakeFiles/OpenGL_GLFW_Demo.dir
-/home/Yante/invader_linux/build/CMakeFiles/edit_cache.dir
-/home/Yante/invader_linux/build/CMakeFiles/rebuild_cache.dir
-/home/Yante/invader_linux/build/external/glad/CMakeFiles/glad.dir
-/home/Yante/invader_linux/build/external/glad/CMakeFiles/edit_cache.dir
-/home/Yante/invader_linux/build/external/glad/CMakeFiles/rebuild_cache.dir
+/home/emiyan/invader_linux/build/CMakeFiles/OpenGL_GLFW_Demo.dir
+/home/emiyan/invader_linux/build/CMakeFiles/edit_cache.dir
+/home/emiyan/invader_linux/build/CMakeFiles/rebuild_cache.dir
+/home/emiyan/invader_linux/build/external/glad/CMakeFiles/glad.dir
+/home/emiyan/invader_linux/build/external/glad/CMakeFiles/edit_cache.dir
+/home/emiyan/invader_linux/build/external/glad/CMakeFiles/rebuild_cache.dir

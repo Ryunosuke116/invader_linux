@@ -1,7 +1,7 @@
 CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o: \
- /home/Yante/invader_linux/main.cpp /usr/include/stdc-predef.h \
- /home/Yante/invader_linux/external/glad/include/glad/glad.h \
- /home/Yante/invader_linux/external/glad/include/KHR/khrplatform.h \
+ /home/emiyan/invader_linux/main.cpp /usr/include/stdc-predef.h \
+ /home/emiyan/invader_linux/external/glad/include/glad/glad.h \
+ /home/emiyan/invader_linux/external/glad/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -156,5 +156,6 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/Yante/invader_linux/include/triangle.h \
- /home/Yante/invader_linux/include/Render.h
+ /home/emiyan/invader_linux/include/triangle.h \
+ /home/emiyan/invader_linux/include/Render.h \
+ /home/emiyan/invader_linux/include/Object2D.h

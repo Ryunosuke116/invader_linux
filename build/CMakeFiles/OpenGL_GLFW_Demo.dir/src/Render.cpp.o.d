@@ -1,6 +1,6 @@
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o: \
- /home/Yante/invader_linux/src/Render.cpp /usr/include/stdc-predef.h \
- /home/Yante/invader_linux/include/stb_image.h /usr/include/stdio.h \
+ /home/emiyan/invader_linux/src/Render.cpp /usr/include/stdc-predef.h \
+ /home/emiyan/invader_linux/include/stb_image.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
  /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
@@ -86,9 +86,9 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o: \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/mmintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/mm_malloc.h \
- /home/Yante/invader_linux/include/stb_image_write.h \
- /home/Yante/invader_linux/include/old_image_resize.h \
- /home/Yante/invader_linux/include/Render.h /usr/include/c++/11/iostream \
+ /home/emiyan/invader_linux/include/stb_image_write.h \
+ /home/emiyan/invader_linux/include/old_image_resize.h \
+ /home/emiyan/invader_linux/include/Render.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h /usr/include/c++/11/bits/postypes.h \

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/Yante/invader_linux/include -I/home/Yante/invader_linux/external/glad/include
+CXX_INCLUDES = -I/home/emiyan/invader_linux/include -I/home/emiyan/invader_linux/external/glad/include
 
 CXX_FLAGS = -std=gnu++17
 

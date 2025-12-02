@@ -1,7 +1,7 @@
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o: \
- /home/Yante/invader_linux/src/CharacterBase.cpp \
+ /home/emiyan/invader_linux/src/CharacterBase.cpp \
  /usr/include/stdc-predef.h \
- /home/Yante/invader_linux/include/CharacterBase.hpp \
+ /home/emiyan/invader_linux/include/CharacterBase.hpp \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

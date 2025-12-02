@@ -5,6 +5,7 @@
 #include <memory>
 #include "triangle.h"
 #include "Render.h"
+#include "Object2D.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
@@ -69,6 +70,7 @@ int main() {
     GLint shader = makeShader();
 
     std::shared_ptr<Render> render = std::make_shared<Render>();
+    std::shared_ptr<Object2D> object = std::make_shared<Object2D>();
     render->Initialize("../png/test.png");
     
     //メインループ
@@ -77,6 +79,12 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glUseProgram(shader);
         glBindVertexArray(vao);
+
+        object->Update(0.1f);
+        auto position = object->GetGLfloat();
+
+        glBindBuffer(GL_ARRAY_BUFFER, vbo);
+	    glBufferData(GL_ARRAY_BUFFER, 12 * sizeof(GLfloat), position, GL_STATIC_DRAW); 
 
         // 現在選択されているシェーダーで、VAO上のオブジェクトを描画する
 		// VBOに格納されたpointsデータの0番目から描画し、3頂点分だけ描画する

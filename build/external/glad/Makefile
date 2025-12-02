@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/Yante/invader_linux
+CMAKE_SOURCE_DIR = /home/emiyan/invader_linux
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/Yante/invader_linux/build
+CMAKE_BINARY_DIR = /home/emiyan/invader_linux/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/Yante/invader_linux/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/Yante/invader_linux/build/CMakeFiles /home/Yante/invader_linux/build/external/glad//CMakeFiles/progress.marks
-	cd /home/Yante/invader_linux/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/Yante/invader_linux/build/CMakeFiles 0
+	cd /home/emiyan/invader_linux/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/emiyan/invader_linux/build/CMakeFiles /home/emiyan/invader_linux/build/external/glad//CMakeFiles/progress.marks
+	cd /home/emiyan/invader_linux/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emiyan/invader_linux/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/Yante/invader_linux/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/clean
+	cd /home/emiyan/invader_linux/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/Yante/invader_linux/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/preinstall
+	cd /home/emiyan/invader_linux/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/Yante/invader_linux/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/preinstall
+	cd /home/emiyan/invader_linux/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/Yante/invader_linux/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/emiyan/invader_linux/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/glad/CMakeFiles/glad.dir/rule:
-	cd /home/Yante/invader_linux/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/CMakeFiles/glad.dir/rule
+	cd /home/emiyan/invader_linux/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/CMakeFiles/glad.dir/rule
 .PHONY : external/glad/CMakeFiles/glad.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ glad: external/glad/CMakeFiles/glad.dir/rule
 
 # fast build rule for target.
 glad/fast:
-	cd /home/Yante/invader_linux/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/build
+	cd /home/emiyan/invader_linux/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
 glad.o: glad.c.o
@@ -135,7 +135,7 @@ glad.o: glad.c.o
 
 # target to build an object file
 glad.c.o:
-	cd /home/Yante/invader_linux/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/glad.c.o
+	cd /home/emiyan/invader_linux/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/glad.c.o
 .PHONY : glad.c.o
 
 glad.i: glad.c.i
@@ -143,7 +143,7 @@ glad.i: glad.c.i
 
 # target to preprocess a source file
 glad.c.i:
-	cd /home/Yante/invader_linux/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/glad.c.i
+	cd /home/emiyan/invader_linux/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/glad.c.i
 .PHONY : glad.c.i
 
 glad.s: glad.c.s
@@ -151,7 +151,7 @@ glad.s: glad.c.s
 
 # target to generate assembly for a file
 glad.c.s:
-	cd /home/Yante/invader_linux/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/glad.c.s
+	cd /home/emiyan/invader_linux/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/glad.c.s
 .PHONY : glad.c.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/Yante/invader_linux/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/emiyan/invader_linux/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

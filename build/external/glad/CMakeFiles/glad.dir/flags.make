@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/Yante/invader_linux/external/glad/include
+C_INCLUDES = -I/home/emiyan/invader_linux/external/glad/include
 
 C_FLAGS = 
 

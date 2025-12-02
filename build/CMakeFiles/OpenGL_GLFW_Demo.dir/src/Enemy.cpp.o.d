@@ -1,5 +1,5 @@
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o: \
- /home/Yante/invader_linux/src/Enemy.cpp /usr/include/stdc-predef.h \
+ /home/emiyan/invader_linux/src/Enemy.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/11/iostream \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -131,8 +131,8 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/Yante/invader_linux/include/Enemy.hpp \
- /home/Yante/invader_linux/include/CharacterBase.hpp \
+ /home/emiyan/invader_linux/include/Enemy.hpp \
+ /home/emiyan/invader_linux/include/CharacterBase.hpp \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
