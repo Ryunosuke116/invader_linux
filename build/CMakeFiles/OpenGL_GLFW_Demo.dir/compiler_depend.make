@@ -229,6 +229,18 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o: /home/emiyan/invader_linux/main.cpp 
   /home/emiyan/invader_linux/include/triangle.h \
   /home/emiyan/invader_linux/include/Render.h
 
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o: /home/emiyan/invader_linux/src/CharacterBase.cpp \
+  /usr/include/stdc-predef.h \
+  /home/emiyan/invader_linux/include/CharacterBase.hpp
+
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o: /home/emiyan/invader_linux/src/Enemy.cpp \
+  /usr/include/stdc-predef.h \
+  /home/emiyan/invader_linux/include/Enemy.hpp \
+  /home/emiyan/invader_linux/include/CharacterBase.hpp
+
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o: /home/emiyan/invader_linux/src/Player.cpp \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o: /home/emiyan/invader_linux/src/Render.cpp \
   /usr/include/stdc-predef.h \
   /home/emiyan/invader_linux/include/stb_image.h \
@@ -493,6 +505,14 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: /home/emiyan/invader_linux/s
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
+/usr/include/c++/11/tr1/special_function_util.h:
+
+/usr/include/c++/11/limits:
+
+/usr/include/c++/11/bits/specfun.h:
+
+/usr/include/bits/iscanonical.h:
+
 /usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/bits/types/timer_t.h:
@@ -578,6 +598,8 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: /home/emiyan/invader_linux/s
 /usr/include/bits/endianness.h:
 
 /usr/include/c++/11/cctype:
+
+/home/emiyan/invader_linux/src/Enemy.cpp:
 
 /usr/include/bits/locale.h:
 
@@ -719,8 +741,6 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: /home/emiyan/invader_linux/s
 
 /usr/include/c++/11/bits/postypes.h:
 
-/usr/include/c++/11/tr1/special_function_util.h:
-
 /usr/include/gnu/stubs-64.h:
 
 /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_base.h:
@@ -830,6 +850,8 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: /home/emiyan/invader_linux/s
 /usr/lib/gcc/x86_64-redhat-linux/11/include/mm_malloc.h:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
+
+/home/emiyan/invader_linux/include/CharacterBase.hpp:
 
 /usr/include/bits/xopen_lim.h:
 
@@ -947,6 +969,8 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: /home/emiyan/invader_linux/s
 
 /usr/include/c++/11/memory:
 
+/home/emiyan/invader_linux/src/Player.cpp:
+
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/backward/auto_ptr.h:
@@ -972,6 +996,8 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: /home/emiyan/invader_linux/s
 /usr/include/sys/select.h:
 
 /usr/include/c++/11/ext/concurrence.h:
+
+/home/emiyan/invader_linux/src/CharacterBase.cpp:
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
@@ -1005,6 +1031,8 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: /home/emiyan/invader_linux/s
 
 /usr/include/bits/uio_lim.h:
 
+/home/emiyan/invader_linux/include/Enemy.hpp:
+
 /usr/include/c++/11/math.h:
 
 /usr/include/math.h:
@@ -1016,9 +1044,3 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: /home/emiyan/invader_linux/s
 /usr/include/bits/fp-fast.h:
 
 /usr/include/bits/mathcalls-narrow.h:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/c++/11/bits/specfun.h:
-
-/usr/include/c++/11/limits:

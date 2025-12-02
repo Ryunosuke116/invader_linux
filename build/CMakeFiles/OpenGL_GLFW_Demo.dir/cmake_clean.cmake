@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o"
   "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o.d"
+  "CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o"
+  "CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o.d"
+  "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o"
+  "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o.d"
+  "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o"
+  "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o.d"
   "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o"
   "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o.d"
   "CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o"

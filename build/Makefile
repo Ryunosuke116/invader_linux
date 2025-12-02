@@ -166,6 +166,78 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/CharacterBase.o: src/CharacterBase.cpp.o
+.PHONY : src/CharacterBase.o
+
+# target to build an object file
+src/CharacterBase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o
+.PHONY : src/CharacterBase.cpp.o
+
+src/CharacterBase.i: src/CharacterBase.cpp.i
+.PHONY : src/CharacterBase.i
+
+# target to preprocess a source file
+src/CharacterBase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.i
+.PHONY : src/CharacterBase.cpp.i
+
+src/CharacterBase.s: src/CharacterBase.cpp.s
+.PHONY : src/CharacterBase.s
+
+# target to generate assembly for a file
+src/CharacterBase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.s
+.PHONY : src/CharacterBase.cpp.s
+
+src/Enemy.o: src/Enemy.cpp.o
+.PHONY : src/Enemy.o
+
+# target to build an object file
+src/Enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o
+.PHONY : src/Enemy.cpp.o
+
+src/Enemy.i: src/Enemy.cpp.i
+.PHONY : src/Enemy.i
+
+# target to preprocess a source file
+src/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.i
+.PHONY : src/Enemy.cpp.i
+
+src/Enemy.s: src/Enemy.cpp.s
+.PHONY : src/Enemy.s
+
+# target to generate assembly for a file
+src/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.s
+.PHONY : src/Enemy.cpp.s
+
+src/Player.o: src/Player.cpp.o
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
 src/Render.o: src/Render.cpp.o
 .PHONY : src/Render.o
 
@@ -227,6 +299,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/CharacterBase.o"
+	@echo "... src/CharacterBase.i"
+	@echo "... src/CharacterBase.s"
+	@echo "... src/Enemy.o"
+	@echo "... src/Enemy.i"
+	@echo "... src/Enemy.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
 	@echo "... src/Render.o"
 	@echo "... src/Render.i"
 	@echo "... src/Render.s"

@@ -83,10 +83,52 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emiyan/invader_linux/main.cpp -o CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.s
 
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o: CMakeFiles/OpenGL_GLFW_Demo.dir/flags.make
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o: /home/emiyan/invader_linux/src/CharacterBase.cpp
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o: CMakeFiles/OpenGL_GLFW_Demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o -MF CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o.d -o CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o -c /home/emiyan/invader_linux/src/CharacterBase.cpp
+
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emiyan/invader_linux/src/CharacterBase.cpp > CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.i
+
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emiyan/invader_linux/src/CharacterBase.cpp -o CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.s
+
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o: CMakeFiles/OpenGL_GLFW_Demo.dir/flags.make
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o: /home/emiyan/invader_linux/src/Enemy.cpp
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o: CMakeFiles/OpenGL_GLFW_Demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o -MF CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o.d -o CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o -c /home/emiyan/invader_linux/src/Enemy.cpp
+
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emiyan/invader_linux/src/Enemy.cpp > CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.i
+
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emiyan/invader_linux/src/Enemy.cpp -o CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.s
+
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o: CMakeFiles/OpenGL_GLFW_Demo.dir/flags.make
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o: /home/emiyan/invader_linux/src/Player.cpp
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o: CMakeFiles/OpenGL_GLFW_Demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o -MF CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o.d -o CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o -c /home/emiyan/invader_linux/src/Player.cpp
+
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emiyan/invader_linux/src/Player.cpp > CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.i
+
+CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emiyan/invader_linux/src/Player.cpp -o CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.s
+
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o: CMakeFiles/OpenGL_GLFW_Demo.dir/flags.make
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o: /home/emiyan/invader_linux/src/Render.cpp
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o: CMakeFiles/OpenGL_GLFW_Demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o -MF CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o.d -o CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o -c /home/emiyan/invader_linux/src/Render.cpp
 
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.i: cmake_force
@@ -100,7 +142,7 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.s: cmake_force
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: CMakeFiles/OpenGL_GLFW_Demo.dir/flags.make
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: /home/emiyan/invader_linux/src/triangle.cpp
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o: CMakeFiles/OpenGL_GLFW_Demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o -MF CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o.d -o CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o -c /home/emiyan/invader_linux/src/triangle.cpp
 
 CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.i: cmake_force
@@ -114,6 +156,9 @@ CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.s: cmake_force
 # Object files for target OpenGL_GLFW_Demo
 OpenGL_GLFW_Demo_OBJECTS = \
 "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o" \
+"CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o" \
+"CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o" \
+"CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o" \
 "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o" \
 "CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o"
 
@@ -121,6 +166,9 @@ OpenGL_GLFW_Demo_OBJECTS = \
 OpenGL_GLFW_Demo_EXTERNAL_OBJECTS =
 
 OpenGL_GLFW_Demo: CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o
+OpenGL_GLFW_Demo: CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o
+OpenGL_GLFW_Demo: CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o
+OpenGL_GLFW_Demo: CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o
 OpenGL_GLFW_Demo: CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o
 OpenGL_GLFW_Demo: CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o
 OpenGL_GLFW_Demo: CMakeFiles/OpenGL_GLFW_Demo.dir/build.make
@@ -129,7 +177,7 @@ OpenGL_GLFW_Demo: external/glad/libglad.a
 OpenGL_GLFW_Demo: /usr/lib64/libGL.so
 OpenGL_GLFW_Demo: /usr/lib64/libGLU.so
 OpenGL_GLFW_Demo: CMakeFiles/OpenGL_GLFW_Demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable OpenGL_GLFW_Demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/emiyan/invader_linux/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable OpenGL_GLFW_Demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenGL_GLFW_Demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -9,6 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/emiyan/invader_linux/main.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/main.cpp.o.d"
+  "/home/emiyan/invader_linux/src/CharacterBase.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/CharacterBase.cpp.o.d"
+  "/home/emiyan/invader_linux/src/Enemy.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.o.d"
+  "/home/emiyan/invader_linux/src/Player.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Player.cpp.o.d"
   "/home/emiyan/invader_linux/src/Render.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/Render.cpp.o.d"
   "/home/emiyan/invader_linux/src/triangle.cpp" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o" "gcc" "CMakeFiles/OpenGL_GLFW_Demo.dir/src/triangle.cpp.o.d"
   )
