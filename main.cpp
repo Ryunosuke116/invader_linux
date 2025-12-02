@@ -20,7 +20,11 @@ int main() {
     GLuint vao;
 	GLuint vbo;
 
-    GLfloat points[] = { 0.5f, 0.5f, 0.3f, 0.5f, -0.5f, 0.0f, -0.5f, -0.5f, 0.0f };
+    GLfloat points[] = { 
+        0.5f, 0.5f, 0.0f, 
+        0.5f, -0.5f, 0.0f, 
+        -0.5f, -0.5f, 0.0f,
+        -0.5f, 0.5f, 0.0f };
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
@@ -51,7 +55,7 @@ int main() {
 	// VBOとは頂点データや色データ、indexデータなどをGPUに伝えるための道？みたいなもの（？）
 	glGenBuffers(1, &vbo);
 	glBindBuffer(GL_ARRAY_BUFFER, vbo);
-	glBufferData(GL_ARRAY_BUFFER, 9 * sizeof(GLfloat), points, GL_STATIC_DRAW); //配列pointsの値をGPUに伝える
+	glBufferData(GL_ARRAY_BUFFER, 12 * sizeof(GLfloat), points, GL_STATIC_DRAW); //配列pointsの値をGPUに伝える
 
 
 	//  頂点配列オブジェクト（Vertex Array Object）作成
@@ -63,8 +67,9 @@ int main() {
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
 
     GLint shader = makeShader();
-    //std::shared_ptr<Render> render = std::make_shared<Render>();
-    //render->Initialize("png/free-png-4.png");
+
+    std::shared_ptr<Render> render = std::make_shared<Render>();
+    render->Initialize("../png/test.png");
     
     //メインループ
     while (!glfwWindowShouldClose(window)) {
@@ -75,9 +80,9 @@ int main() {
 
         // 現在選択されているシェーダーで、VAO上のオブジェクトを描画する
 		// VBOに格納されたpointsデータの0番目から描画し、3頂点分だけ描画する
-		glDrawArrays(GL_TRIANGLES, 0, 3);
+		glDrawArrays(GL_LINE_LOOP, 0, 4);
 
-       // render->Update("png/free-png-4.png");
+        render->Update("../png/test.png");
 
         glfwSwapBuffers(window);
         glfwPollEvents();

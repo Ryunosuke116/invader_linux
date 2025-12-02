@@ -16,7 +16,10 @@ void Render::Initialize(const char* path)
     std::cerr << "Failed to load image!" << std::endl;
     std::cerr << stbi_failure_reason() << std::endl;
     return;
-        }
+    }
+
+    //メモリを確保
+	pixel_resize = (unsigned char*)malloc((size_t)reWidth * reWidth * 4);
 }
 
 void Render::Update(const char* path)
