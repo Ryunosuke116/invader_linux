@@ -76,6 +76,7 @@ int main() {
 
     std::shared_ptr<Object2D> object = std::make_shared<Object2D>();
     std::shared_ptr<Object2D> object_1 = std::make_shared<Object2D>();
+    std::shared_ptr<Object2D> object_2 = std::make_shared<Object2D>();
 
     std::shared_ptr<GameScene> gameScene = std::make_shared<GameScene>();
 
@@ -91,33 +92,23 @@ int main() {
 
         object->Update(0.1f);
         object_1->Update(-0.1f);
+        object_2->Update(-0.01f);
 
-        auto position = object->GetGLfloat();
-        auto position_1 = object_1->GetGLfloat();
-
-        std::vector<GLfloat> vPos;
-        for(int i = 0; i < 12; i++)
-        {
-            vPos.push_back(position[i]);
-        }
-         for(int i = 0; i < 12; i++)
-        {
-            vPos.push_back(position_1[i]);
-        }
+        render->SetPosition(object->GetGLfloat());
+        render->SetPosition(object_1->GetGLfloat());
+        render->SetPosition(object_2->GetGLfloat());
 
         glBindBuffer(GL_ARRAY_BUFFER, vbo);
 	    glBufferData(
             GL_ARRAY_BUFFER,
-             vPos.size() * sizeof(GLfloat),
-              vPos.data(), 
+             render->GetPosition().size() * sizeof(GLfloat),
+              render->GetPosition().data(), 
               GL_STATIC_DRAW); 
 
-        // 現在選択されているシェーダーで、VAO上のオブジェクトを描画する
-		// VBOに格納されたpointsデータの0番目から描画し、3頂点分だけ描画する
-		glDrawArrays(GL_LINE_LOOP, 0, 4);
-        glDrawArrays(GL_LINE_LOOP, 4, 4);
+        render->Draw();
 
         render->Update("../png/test.png");
+        render->ResetPosition();
         gameScene->Update();
 
         gameScene->Draw();

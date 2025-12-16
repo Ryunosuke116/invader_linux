@@ -11,6 +11,7 @@
 
 void Render::Initialize(const char* path)
 {
+    m_objectCount = 0;
     pixel = stbi_load(path, &width, &height, &bpp, 4);
     if (!pixel) {
     std::cerr << "Failed to load image!" << std::endl;
@@ -29,4 +30,23 @@ void Render::Update(const char* path)
 
 	//出力
 	stbi_write_png(path, reWidth, reWidth, bpp, pixel_resize,  0);
+}
+
+void Render::Draw()
+{
+    // 現在選択されているシェーダーで、VAO上のオブジェクトを描画する
+	// VBOに格納されたpointsデータの0番目から描画し、3頂点分だけ描画する
+    for(int i = 0; i < m_objectCount; i++)
+    {
+        glDrawArrays(GL_LINE_LOOP, i * 4, 4);
+    }
+}
+
+void Render::SetPosition(std::vector<GLfloat> objectPos)
+{
+    for(int i = 0; i < objectPos.size(); i++)
+    {
+        m_positions.push_back(objectPos[i]);
+    }
+    m_objectCount++;
 }

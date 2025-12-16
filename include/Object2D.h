@@ -1,5 +1,6 @@
 #pragma once
 #include <GLFW/glfw3.h>
+#include <vector>
 
 class Object2D
 {
@@ -9,10 +10,10 @@ public:
 
     void Update(GLfloat x);
 
-    const GLfloat* GetGLfloat() const { return position; }
+    const std::vector<GLfloat> GetGLfloat() const { return position; }
 
 private:
-    GLfloat position[12] = 
+    std::vector<GLfloat> position = 
     { 
         0.1f, 0.1f, 0.0f, 
         0.1f, -0.1f, 0.0f, 
