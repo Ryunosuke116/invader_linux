@@ -13,11 +13,11 @@ class Enemy : public CharacterBase
 
     void CheckWindowEdge();
 
+    void Shot()override;
+
     void  Draw() override;
 
     private:
-    static constexpr float MAX_MOVE_SPEED = 2.0f;
-    bool m_is_right;
-    bool m_is_left;
+    static constexpr GLfloat MAX_MOVE_SPEED = 0.01f;
 
 };

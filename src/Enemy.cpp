@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Enemy.hpp"
-
 Enemy::Enemy()
 {
     m_is_right = true;
@@ -17,6 +16,8 @@ void Enemy::Update()
     CheckWindowEdge();
     Move();
 
+    obj_2D->SetPointXY(m_posX,m_posY);
+
 }
 
 void Enemy::Move()
@@ -29,6 +30,11 @@ void Enemy::Move()
     {
         m_posX -= MAX_MOVE_SPEED;
     }
+
+}
+
+void Enemy::Shot()
+{
 
 }
 
@@ -49,5 +55,6 @@ void Enemy::CheckWindowEdge()
 
 void Enemy::Draw()
 {
+
     std::cerr << "pos_X" << (m_posX) << "\n";
 }

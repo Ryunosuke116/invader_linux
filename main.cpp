@@ -78,6 +78,8 @@ int main() {
     std::shared_ptr<Object2D> object_1 = std::make_shared<Object2D>();
     std::shared_ptr<Object2D> object_2 = std::make_shared<Object2D>();
 
+    std::shared_ptr<CharacterBase> enemy = std::make_shared<Enemy>();
+
     std::shared_ptr<GameScene> gameScene = std::make_shared<GameScene>();
 
     PointXY objectXY={0.0f,0.0f};
@@ -86,6 +88,8 @@ int main() {
 
     render->Initialize("../png/test.png");
     // GameScene->Initialize();
+    
+    enemy->Initialize();
 
     //メインループ
     while (!glfwWindowShouldClose(window)) {
@@ -94,17 +98,10 @@ int main() {
         glUseProgram(shader);
         glBindVertexArray(vao);
         
-        objectXY.x += 0.01f;
-        objectXY_1.x -= 0.02f;
-        objectXY_2.x -= 0.01f;
 
-        object->SetPointXY(objectXY.x, objectXY.y);
-        object_1->SetPointXY(objectXY_1.x, 0.0f);
-        object_2->SetPointXY(objectXY_2.x, 0.0f);
+        enemy->Update();
 
-        render->SetPosition(object->GetGLfloat());
-        render->SetPosition(object_1->GetGLfloat());
-        render->SetPosition(object_2->GetGLfloat());
+        render->SetPosition(enemy->GetPosition());
 
         glBindBuffer(GL_ARRAY_BUFFER, vbo);
 	    glBufferData(
