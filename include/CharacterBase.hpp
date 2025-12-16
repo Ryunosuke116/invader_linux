@@ -18,7 +18,7 @@ public:
     virtual void Draw() {};
 
 protected:
-    static constexpr int MAX_HP = 3;
+    static constexpr int MAX_HP = 1;
     static constexpr int BULLET_NUM = 6;
 
     int m_posX;

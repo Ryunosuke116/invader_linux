@@ -3,7 +3,8 @@
 
 Enemy::Enemy()
 {
-
+    m_is_right = true;
+    m_is_left = false;
 }
 
 Enemy::~Enemy()
@@ -13,7 +14,9 @@ Enemy::~Enemy()
 
 void Enemy::Update()
 {
-    
+    CheckWindowEdge();
+    Move();
+
 }
 
 void Enemy::Move()
@@ -25,6 +28,21 @@ void Enemy::Move()
     else if(m_is_left)
     {
         m_posX -= MAX_MOVE_SPEED;
+    }
+
+}
+
+void Enemy::CheckWindowEdge()
+{
+    if(m_posX>=800)
+    {
+        m_is_right = false;
+        m_is_left = true;
+    }
+    if (m_posX<=0)
+    {
+        m_is_right = true;
+        m_is_left = false;
     }
 
 }
