@@ -6,6 +6,9 @@
 #include "triangle.h"
 #include "Render.h"
 #include "Object2D.h"
+#include "CharacterBase.hpp"
+#include "Enemy.hpp"
+#include "GameScene.hpp"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
@@ -70,9 +73,14 @@ int main() {
     GLint shader = makeShader();
 
     std::shared_ptr<Render> render = std::make_shared<Render>();
+
     std::shared_ptr<Object2D> object = std::make_shared<Object2D>();
+
+    std::shared_ptr<GameScene> gameScene = std::make_shared<GameScene>();
+
     render->Initialize("../png/test.png");
-    
+    // GameScene->Initialize();
+
     //メインループ
     while (!glfwWindowShouldClose(window)) {
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -91,6 +99,9 @@ int main() {
 		glDrawArrays(GL_LINE_LOOP, 0, 4);
 
         render->Update("../png/test.png");
+        gameScene->Update();
+
+        gameScene->Draw();
 
         glfwSwapBuffers(window);
         glfwPollEvents();

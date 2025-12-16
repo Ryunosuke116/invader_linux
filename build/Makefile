@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emiyan/invader_linux
+CMAKE_SOURCE_DIR = /home/Yante/invader_linux
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emiyan/invader_linux/build
+CMAKE_BINARY_DIR = /home/Yante/invader_linux/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emiyan/invader_linux/build/CMakeFiles /home/emiyan/invader_linux/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Yante/invader_linux/build/CMakeFiles /home/Yante/invader_linux/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emiyan/invader_linux/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Yante/invader_linux/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -213,6 +213,30 @@ src/Enemy.s: src/Enemy.cpp.s
 src/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/Enemy.cpp.s
 .PHONY : src/Enemy.cpp.s
+
+src/GameScene.o: src/GameScene.cpp.o
+.PHONY : src/GameScene.o
+
+# target to build an object file
+src/GameScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/GameScene.cpp.o
+.PHONY : src/GameScene.cpp.o
+
+src/GameScene.i: src/GameScene.cpp.i
+.PHONY : src/GameScene.i
+
+# target to preprocess a source file
+src/GameScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/GameScene.cpp.i
+.PHONY : src/GameScene.cpp.i
+
+src/GameScene.s: src/GameScene.cpp.s
+.PHONY : src/GameScene.s
+
+# target to generate assembly for a file
+src/GameScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_GLFW_Demo.dir/build.make CMakeFiles/OpenGL_GLFW_Demo.dir/src/GameScene.cpp.s
+.PHONY : src/GameScene.cpp.s
 
 src/Object2D.o: src/Object2D.cpp.o
 .PHONY : src/Object2D.o
@@ -353,6 +377,9 @@ help:
 	@echo "... src/Enemy.o"
 	@echo "... src/Enemy.i"
 	@echo "... src/Enemy.s"
+	@echo "... src/GameScene.o"
+	@echo "... src/GameScene.i"
+	@echo "... src/GameScene.s"
 	@echo "... src/Object2D.o"
 	@echo "... src/Object2D.i"
 	@echo "... src/Object2D.s"

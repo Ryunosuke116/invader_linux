@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/emiyan/invader_linux/CMakeLists.txt"
+  "/home/Yante/invader_linux/CMakeLists.txt"
   "CMakeFiles/3.26.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.5/CMakeSystem.cmake"
-  "/home/emiyan/invader_linux/external/glad/CMakeLists.txt"
+  "/home/Yante/invader_linux/external/glad/CMakeLists.txt"
   "/usr/lib64/cmake/glfw3/glfw3Config.cmake"
   "/usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake"
   "/usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake"
