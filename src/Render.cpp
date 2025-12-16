@@ -37,7 +37,7 @@ void Render::Draw()
     // オブジェクトの数分描画
     for(int i = 0; i < m_objectCount; i++)
     {
-        glDrawArrays(GL_LINE_LOOP, i * kSquareVertexValue, kSquareVertexValue);
+        glDrawArrays(GL_TRIANGLE_STRIP, i * kSquareVertexValue, kSquareVertexValue);
     }
 }
 
