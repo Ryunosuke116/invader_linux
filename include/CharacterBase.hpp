@@ -11,11 +11,11 @@ public:
 
     virtual void Initialize();
 
-    virtual void Update() =0;
+    virtual void Update() {};
 
-    virtual void Move() = 0;
+    virtual void Move() {};
     virtual void Shot() {};
-    virtual void Draw() =0;
+    virtual void Draw() {};
 
 protected:
     static constexpr int MAX_HP = 3;
