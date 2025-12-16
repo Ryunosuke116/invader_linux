@@ -80,6 +80,10 @@ int main() {
 
     std::shared_ptr<GameScene> gameScene = std::make_shared<GameScene>();
 
+    PointXY objectXY={0.0f,0.0f};
+    PointXY objectXY_1={0.0f,0.0f};
+    PointXY objectXY_2={0.0f,0.0f};
+
     render->Initialize("../png/test.png");
     // GameScene->Initialize();
 
@@ -89,10 +93,14 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glUseProgram(shader);
         glBindVertexArray(vao);
+        
+        objectXY.x += 0.01f;
+        objectXY_1.x -= 0.02f;
+        objectXY_2.x -= 0.01f;
 
-        object->Update(0.1f);
-        object_1->Update(-0.1f);
-        object_2->Update(-0.01f);
+        object->SetPointXY(objectXY.x, objectXY.y);
+        object_1->SetPointXY(objectXY_1.x, 0.0f);
+        object_2->SetPointXY(objectXY_2.x, 0.0f);
 
         render->SetPosition(object->GetGLfloat());
         render->SetPosition(object_1->GetGLfloat());
@@ -107,7 +115,6 @@ int main() {
 
         render->Draw();
 
-        render->Update("../png/test.png");
         render->ResetPosition();
         gameScene->Update();
 

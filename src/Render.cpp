@@ -34,11 +34,10 @@ void Render::Update(const char* path)
 
 void Render::Draw()
 {
-    // 現在選択されているシェーダーで、VAO上のオブジェクトを描画する
-	// VBOに格納されたpointsデータの0番目から描画し、3頂点分だけ描画する
+    // オブジェクトの数分描画
     for(int i = 0; i < m_objectCount; i++)
     {
-        glDrawArrays(GL_LINE_LOOP, i * 4, 4);
+        glDrawArrays(GL_LINE_LOOP, i * kSquareVertexValue, kSquareVertexValue);
     }
 }
 

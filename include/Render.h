@@ -17,10 +17,13 @@ public:
 private:
     std::vector<GLfloat> m_positions;
     int m_objectCount;
-     unsigned char* pixel = NULL;
+
+    unsigned char* pixel = NULL;
     unsigned char* pixel_resize = NULL;
     int width = 0;
     int height = 0;
     int bpp = 0;
     int reWidth = 512;
+
+    static constexpr int kSquareVertexValue = 4;    //四角形の頂点数
 };

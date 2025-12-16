@@ -2,6 +2,12 @@
 #include <GLFW/glfw3.h>
 #include <vector>
 
+struct PointXY
+    {
+        GLfloat x = 0.0f;
+        GLfloat y = 0.0f;
+    };
+
 class Object2D
 {
 public:
@@ -9,11 +15,14 @@ public:
     ~Object2D();
 
     void Update(GLfloat x);
+    void SetPointXY(GLfloat x, GLfloat y);
 
-    const std::vector<GLfloat> GetGLfloat() const { return position; }
+    const std::vector<GLfloat> GetGLfloat() const { return m_position; }
 
 private:
-    std::vector<GLfloat> position = 
+    PointXY m_pointXY = { 0.0f, 0.0f };
+
+    std::vector<GLfloat> m_position = 
     { 
         0.1f, 0.1f, 0.0f, 
         0.1f, -0.1f, 0.0f, 

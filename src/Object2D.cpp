@@ -15,8 +15,24 @@ Object2D::~Object2D()
 
 void Object2D::Update(GLfloat x)
 {
-        position[0]+= x;
-        position[3]+= x;
-        position[6]+= x;
-        position[9]+= x;
+        m_position[0]+= x;
+        m_position[3]+= x;
+        m_position[6]+= x;
+        m_position[9]+= x;
+}
+
+void Object2D::SetPointXY(GLfloat x, GLfloat y)
+{
+        m_pointXY.x = x;
+        m_pointXY.y = y;
+
+        m_position[0] = (x + 0.1f); 
+        m_position[3] = (x + 0.1f);
+        m_position[6] = (x - 0.1f);  
+        m_position[9] = (x - 0.1f); 
+
+        m_position[1] = (y + 0.1f); 
+        m_position[4] = (y - 0.1f);
+        m_position[7] = (y - 0.1f);  
+        m_position[10] = (y + 0.1f); 
 }
