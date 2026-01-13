@@ -16,17 +16,20 @@ public:
 
     void Update(GLfloat x);
     void SetPointXY(GLfloat x, GLfloat y);
+    void SetSizeValue(GLfloat setSizeValue) { sizeValue = setSizeValue; }
 
     const std::vector<GLfloat> GetGLfloat() const { return m_position; }
 
 private:
     PointXY m_pointXY = { 0.0f, 0.0f };
 
+    GLfloat sizeValue = 0.1f;
+
     std::vector<GLfloat> m_position = 
     { 
-        0.1f, 0.1f, 0.0f, 
-        0.1f, -0.1f, 0.0f, 
-        -0.1f, -0.1f, 0.0f,
-        -0.1f, 0.1f, 0.0f 
+        sizeValue, sizeValue, 0.0f, 
+        sizeValue, -sizeValue, 0.0f, 
+        -sizeValue, -sizeValue, 0.0f,
+        -sizeValue, sizeValue, 0.0f 
     };
 };

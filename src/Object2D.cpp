@@ -26,13 +26,13 @@ void Object2D::SetPointXY(GLfloat x, GLfloat y)
         m_pointXY.x = x;
         m_pointXY.y = y;
 
-        m_position[0] = (x + 0.1f); 
-        m_position[3] = (x + 0.1f);
-        m_position[6] = (x - 0.1f);  
-        m_position[9] = (x - 0.1f); 
+        m_position[0] = (x + sizeValue); 
+        m_position[3] = (x + sizeValue);
+        m_position[6] = (x - sizeValue);  
+        m_position[9] = (x - sizeValue); 
 
-        m_position[1] = (y + 0.1f); 
-        m_position[4] = (y - 0.1f);
-        m_position[7] = (y + 0.1f);  
-        m_position[10] = (y - 0.1f); 
+        m_position[1] = (y + sizeValue); 
+        m_position[4] = (y - sizeValue);
+        m_position[7] = (y + sizeValue);  
+        m_position[10] = (y - sizeValue); 
 }
