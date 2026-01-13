@@ -1,4 +1,5 @@
 #include"Player.h"
+
 Player::Player()
 {
 
@@ -9,30 +10,25 @@ Player::~Player()
 }
 void Player::Update(GLFWwindow* window)
 {
-   //プレイヤー描画関数
-   
    //入力待ち関数
    Shot(window);
    Move(window);
-   
-}
-void Player::Draw()  //描画関数
-{
 
+   obj_2D->SetPointXY(m_posX,m_posY);
 }
 
 void Player::Move(GLFWwindow* window)
 {
-   
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
     {
-        m_posX--;
+        m_posX -= 0.01f;
     }
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
     {
-        m_posX++;
+        m_posX += 0.01f;
     }
-   
+
+
 }
 
 void Player::Shot(GLFWwindow* window)

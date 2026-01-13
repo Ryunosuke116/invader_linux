@@ -9,6 +9,7 @@
 #include "Object2D.h"
 #include "CharacterBase.hpp"
 #include "Enemy.hpp"
+#include "Player.h"
 #include "GameScene.hpp"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
@@ -81,6 +82,10 @@ int main() {
     std::shared_ptr<CharacterBase> enemy = std::make_shared<Enemy>();
 
     std::shared_ptr<GameScene> gameScene = std::make_shared<GameScene>();
+    //1月13日追加
+    std::shared_ptr<CharacterBase> player = std::make_shared<Player>();
+    std::shared_ptr<Player> actualPlayer =  std::dynamic_pointer_cast<Player>(player);
+
 
     PointXY objectXY={0.0f,0.0f};
     PointXY objectXY_1={0.0f,0.0f};
@@ -90,18 +95,23 @@ int main() {
     // GameScene->Initialize();
     
     enemy->Initialize();
+    player->Initialize();
 
     //メインループ
     while (!glfwWindowShouldClose(window)) {
+        
+        glfwPollEvents();//入力の取得するための関数
+
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glUseProgram(shader);
         glBindVertexArray(vao);
         
-
         enemy->Update();
+        actualPlayer->Update(window);
 
         render->SetPosition(enemy->GetPosition());
+        render->SetPosition(player->GetPosition());
 
         glBindBuffer(GL_ARRAY_BUFFER, vbo);
 	    glBufferData(
@@ -111,16 +121,14 @@ int main() {
               GL_STATIC_DRAW); 
 
         render->Draw();
-
         render->ResetPosition();
-        gameScene->Update();
 
+        gameScene->Update();
         gameScene->Draw();
 
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
-
     glfwTerminate();
     return 0;
 }
