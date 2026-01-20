@@ -13,10 +13,11 @@ Enemy::~Enemy()
 void Enemy::Initialize()
 {
     CharacterBase::Initialize();
+    m_isMovePosY = false;
     GLfloat interval = 0.02f;
     GLfloat startPointX = -0.9f;
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < kMaxEnemy; i++)
     {
         EnemyData enemyData;
         enemyData.obj_2D = std::make_shared<Object2D>();
@@ -30,16 +31,12 @@ void Enemy::Initialize()
 
         vEnemys.push_back(enemyData);
     }
-
-    obj_2D->SetSizeValue(0.05f);
 }
 
 void Enemy::Update()
 {
     CheckWindowEdge();
     Move();
-
-    obj_2D->SetPointXY(m_posX,m_posY);
 
     for (auto& enemyData : vEnemys)
     {
@@ -53,19 +50,29 @@ void Enemy::Move()
     {
         for (auto& enemyData : vEnemys)
         {
+            if(m_isMovePosY)
+            {
+                enemyData.m_posY -= kAddPosY;
+            }
             enemyData.m_posX += MAX_MOVE_SPEED;
         }
-        m_posX += MAX_MOVE_SPEED;
     }
     else if(m_is_left)
     {
          for (auto& enemyData : vEnemys)
         {
+            if(m_isMovePosY)
+            {
+                enemyData.m_posY -= kAddPosY;
+            }
             enemyData.m_posX -= MAX_MOVE_SPEED;
         }
-        m_posX -= MAX_MOVE_SPEED;
     }
 
+    if (m_isMovePosY)
+    {
+        m_isMovePosY = false;
+    }
 }
 
 void Enemy::Shot()
@@ -75,20 +82,20 @@ void Enemy::Shot()
 
 void Enemy::CheckWindowEdge()
 {
-     for (auto& enemyData : vEnemys)
+    for (auto& enemyData : vEnemys)
     {
         if (enemyData.m_posX >= 1.0f - enemyData.obj_2D->GetSizeValue())
         {
             m_is_right = false;
             m_is_left = true;
+            m_isMovePosY = true;
         }
         else if (enemyData.m_posX <= -1.0f + enemyData.obj_2D->GetSizeValue())
         {
             m_is_right = true;
             m_is_left = false;
+            m_isMovePosY = true;
         }
-
-        enemyData.obj_2D->SetPointXY(enemyData.m_posX, enemyData.m_posY);
     }
 }
 
