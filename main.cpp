@@ -11,6 +11,8 @@
 #include "Enemy.hpp"
 #include "Player.h"
 #include "GameScene.hpp"
+#include"Bullet.h"
+ 
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
@@ -87,7 +89,6 @@ int main() {
     std::shared_ptr<CharacterBase> player = std::make_shared<Player>();
     std::shared_ptr<Player> actualPlayer =  std::dynamic_pointer_cast<Player>(player);
 
-
     PointXY objectXY = {0.0f,0.0f};
     PointXY objectXY_1 = {0.0f,0.0f};
     PointXY objectXY_2 = {0.0f,0.0f};
@@ -97,6 +98,7 @@ int main() {
     
     enemy->Initialize();
     player->Initialize();
+ 
 
     //メインループ
     while (!glfwWindowShouldClose(window)) {
@@ -110,10 +112,11 @@ int main() {
         
         enemy->Update();
         actualPlayer->Update(window);
+        std::shared_ptr<Bullet> actualBullet = std::dynamic_pointer_cast<Bullet>(actualPlayer->GetBullet());
+        actualBullet->Draw(*render);
 
         //render->SetPosition(enemy->GetPosition());
         render->SetPosition(player->GetPosition());
-        
         for (auto& enemyData : actualEnemy->GetEnemys())
         {
             render->SetPosition(enemyData.obj_2D->GetGLfloat());
@@ -138,3 +141,4 @@ int main() {
     glfwTerminate();
     return 0;
 }
+ 
