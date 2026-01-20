@@ -10,6 +10,29 @@ Enemy::~Enemy()
 {
 }
 
+void Enemy::Initialize()
+{
+    CharacterBase::Initialize();
+    GLfloat interval = 0.02f;
+    GLfloat startPointX = -0.9f;
+
+    for (int i = 0; i < 5; i++)
+    {
+        EnemyData enemyData;
+        enemyData.obj_2D = std::make_shared<Object2D>();
+        enemyData.isActivity = true;
+        enemyData.m_posX = startPointX;
+        enemyData.m_posY = 1.0f - 0.05f;
+
+        enemyData.obj_2D->SetPointXY(enemyData.m_posX, enemyData.m_posY);
+        startPointX += 0.15f;
+        enemyData.obj_2D->SetSizeValue(0.05f);
+
+        vEnemys.push_back(enemyData);
+    }
+
+    obj_2D->SetSizeValue(0.05f);
+}
 
 void Enemy::Update()
 {
@@ -18,16 +41,28 @@ void Enemy::Update()
 
     obj_2D->SetPointXY(m_posX,m_posY);
 
+    for (auto& enemyData : vEnemys)
+    {
+        enemyData.obj_2D->SetPointXY(enemyData.m_posX, enemyData.m_posY);
+    }
 }
 
 void Enemy::Move()
 {
     if(m_is_right)
     {
+        for (auto& enemyData : vEnemys)
+        {
+            enemyData.m_posX += MAX_MOVE_SPEED;
+        }
         m_posX += MAX_MOVE_SPEED;
     }
     else if(m_is_left)
     {
+         for (auto& enemyData : vEnemys)
+        {
+            enemyData.m_posX -= MAX_MOVE_SPEED;
+        }
         m_posX -= MAX_MOVE_SPEED;
     }
 
@@ -40,17 +75,21 @@ void Enemy::Shot()
 
 void Enemy::CheckWindowEdge()
 {
-    if(m_posX>=800)
+     for (auto& enemyData : vEnemys)
     {
-        m_is_right = false;
-        m_is_left = true;
-    }
-    if (m_posX<=0)
-    {
-        m_is_right = true;
-        m_is_left = false;
-    }
+        if (enemyData.m_posX >= 1.0f - enemyData.obj_2D->GetSizeValue())
+        {
+            m_is_right = false;
+            m_is_left = true;
+        }
+        else if (enemyData.m_posX <= -1.0f + enemyData.obj_2D->GetSizeValue())
+        {
+            m_is_right = true;
+            m_is_left = false;
+        }
 
+        enemyData.obj_2D->SetPointXY(enemyData.m_posX, enemyData.m_posY);
+    }
 }
 
 void Enemy::Draw()

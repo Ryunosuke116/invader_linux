@@ -79,7 +79,8 @@ int main() {
     std::shared_ptr<Object2D> object_1 = std::make_shared<Object2D>();
     std::shared_ptr<Object2D> object_2 = std::make_shared<Object2D>();
 
-    std::shared_ptr<CharacterBase> enemy = std::make_shared<Enemy>();
+    std::shared_ptr<CharacterBase> enemy        = std::make_shared<Enemy>();
+    std::shared_ptr<Enemy>         actualEnemy  = std::dynamic_pointer_cast<Enemy>(enemy);
 
     std::shared_ptr<GameScene> gameScene = std::make_shared<GameScene>();
     //1月13日追加
@@ -87,9 +88,9 @@ int main() {
     std::shared_ptr<Player> actualPlayer =  std::dynamic_pointer_cast<Player>(player);
 
 
-    PointXY objectXY={0.0f,0.0f};
-    PointXY objectXY_1={0.0f,0.0f};
-    PointXY objectXY_2={0.0f,0.0f};
+    PointXY objectXY = {0.0f,0.0f};
+    PointXY objectXY_1 = {0.0f,0.0f};
+    PointXY objectXY_2 = {0.0f,0.0f};
 
     render->Initialize("../png/test.png");
     // GameScene->Initialize();
@@ -110,8 +111,13 @@ int main() {
         enemy->Update();
         actualPlayer->Update(window);
 
-        render->SetPosition(enemy->GetPosition());
+        //render->SetPosition(enemy->GetPosition());
         render->SetPosition(player->GetPosition());
+        
+        for (auto& enemyData : actualEnemy->GetEnemys())
+        {
+            render->SetPosition(enemyData.obj_2D->GetGLfloat());
+        }
 
         glBindBuffer(GL_ARRAY_BUFFER, vbo);
 	    glBufferData(
