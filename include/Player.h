@@ -8,7 +8,7 @@ class Player : public CharacterBase
     public:
     Player();
     ~Player();
-    
+
     void Update(GLFWwindow * window);
     
     void Move(GLFWwindow * window);

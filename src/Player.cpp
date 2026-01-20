@@ -9,6 +9,7 @@ Player::~Player()
 {
 
 }
+
 void Player::Update(GLFWwindow* window)
 {
    //入力待ち関数
@@ -16,11 +17,13 @@ void Player::Update(GLFWwindow* window)
    Move(window);
    bullet->Update();
 
-   obj_2D->SetPointXY(m_posX,m_posY);
+   obj_2D->SetPointXY(m_posX, m_posY);
 }
 void Player::Initialize()
 {
     CharacterBase::Initialize();
+    
+    m_posY = -0.8f;
     bullet = std::make_shared<Bullet>();
     actualBullet =  std::dynamic_pointer_cast<Bullet>(bullet);
  

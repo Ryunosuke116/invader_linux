@@ -31,8 +31,9 @@ public:
 
 private:
     static constexpr GLfloat MAX_MOVE_SPEED = 0.01f;
-    static constexpr GLfloat kAddPosY = 0.03f;
-    static constexpr int kMaxEnemy = 10;
+    static constexpr GLfloat kAddPosY = 0.01f;
+    static constexpr int kMaxEnemyX = 10;
+    static constexpr int kMaxEnemyY = 4;
 
     std::vector<EnemyData> vEnemys;
     bool m_isMovePosY;

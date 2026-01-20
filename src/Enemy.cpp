@@ -16,20 +16,26 @@ void Enemy::Initialize()
     m_isMovePosY = false;
     GLfloat interval = 0.02f;
     GLfloat startPointX = -0.9f;
+    GLfloat addPosY = 1.0f;
 
-    for (int i = 0; i < kMaxEnemy; i++)
+    for (int j = 0; j < kMaxEnemyY; j++)
     {
-        EnemyData enemyData;
-        enemyData.obj_2D = std::make_shared<Object2D>();
-        enemyData.isActivity = true;
-        enemyData.m_posX = startPointX;
-        enemyData.m_posY = 1.0f - 0.05f;
-
-        enemyData.obj_2D->SetPointXY(enemyData.m_posX, enemyData.m_posY);
-        startPointX += 0.15f;
-        enemyData.obj_2D->SetSizeValue(0.05f);
-
-        vEnemys.push_back(enemyData);
+        for (int i = 0; i < kMaxEnemyX; i++)
+        {
+            EnemyData enemyData;
+            enemyData.obj_2D = std::make_shared<Object2D>();
+            enemyData.isActivity = true;
+            enemyData.m_posX = startPointX;
+            enemyData.m_posY = addPosY - 0.05f;
+    
+            enemyData.obj_2D->SetPointXY(enemyData.m_posX, enemyData.m_posY);
+            startPointX += 0.15f;
+            enemyData.obj_2D->SetSizeValue(0.05f);
+    
+            vEnemys.push_back(enemyData);
+        }
+        startPointX = -0.9f;
+        addPosY -= 0.2f;
     }
 }
 
