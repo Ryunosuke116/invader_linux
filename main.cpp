@@ -6,13 +6,9 @@
 #include <vector>
 #include "triangle.h"
 #include "Render.h"
-#include "Object2D.h"
-#include "CharacterBase.hpp"
-#include "Enemy.hpp"
-#include "Player.h"
-#include "GameScene.hpp"
-#include"Bullet.h"
- 
+#include "Game.h"
+#include "Result.h"
+#include "SceneManager.hpp"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
@@ -76,29 +72,13 @@ int main() {
     GLint shader = makeShader();
 
     std::shared_ptr<Render> render = std::make_shared<Render>();
+    std::shared_ptr<SceneManager> sceneManager = std::make_shared<SceneManager>();
 
-    std::shared_ptr<Object2D> object = std::make_shared<Object2D>();
-    std::shared_ptr<Object2D> object_1 = std::make_shared<Object2D>();
-    std::shared_ptr<Object2D> object_2 = std::make_shared<Object2D>();
-
-    std::shared_ptr<CharacterBase> enemy        = std::make_shared<Enemy>();
-    std::shared_ptr<Enemy>         actualEnemy  = std::dynamic_pointer_cast<Enemy>(enemy);
-
-    std::shared_ptr<GameScene> gameScene = std::make_shared<GameScene>();
-    //1月13日追加
-    std::shared_ptr<CharacterBase> player = std::make_shared<Player>();
-    std::shared_ptr<Player> actualPlayer =  std::dynamic_pointer_cast<Player>(player);
-
-    PointXY objectXY = {0.0f,0.0f};
-    PointXY objectXY_1 = {0.0f,0.0f};
-    PointXY objectXY_2 = {0.0f,0.0f};
-
-    render->Initialize("../png/test.png");
-    // GameScene->Initialize();
+    sceneManager->AddScene<Game>("Game");
+    sceneManager->AddScene<Result>("Result");
     
-    enemy->Initialize();
-    player->Initialize();
- 
+    render->Initialize("../png/test.png");
+    sceneManager->Initialize();
 
     //メインループ
     while (!glfwWindowShouldClose(window)) {
@@ -110,17 +90,7 @@ int main() {
         glUseProgram(shader);
         glBindVertexArray(vao);
         
-        enemy->Update();
-        actualPlayer->Update(window);
-        std::shared_ptr<Bullet> actualBullet = std::dynamic_pointer_cast<Bullet>(actualPlayer->GetBullet());
-        actualBullet->Draw(*render);
-
-        //render->SetPosition(enemy->GetPosition());
-        render->SetPosition(player->GetPosition());
-        for (auto& enemyData : actualEnemy->GetEnemys())
-        {
-            render->SetPosition(enemyData.obj_2D->GetGLfloat());
-        }
+        sceneManager->Update(window,*render);
 
         glBindBuffer(GL_ARRAY_BUFFER, vbo);
 	    glBufferData(
@@ -131,9 +101,6 @@ int main() {
 
         render->Draw();
         render->ResetPosition();
-
-        gameScene->Update();
-        gameScene->Draw();
 
         glfwSwapBuffers(window);
         glfwPollEvents();
