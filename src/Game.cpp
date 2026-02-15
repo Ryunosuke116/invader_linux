@@ -24,6 +24,9 @@ void Game::Initialize()
         
         player          = std::make_shared<Player>();
         actualPlayer    =  std::dynamic_pointer_cast<Player>(player);    
+
+         actualCollision = std::make_shared<CollisionSystem>();
+        actualBullet = std::dynamic_pointer_cast<Bullet>(actualPlayer->GetBullet());
     }
 
     enemy->Initialize();
@@ -38,19 +41,35 @@ void Game::Update(GLFWwindow* window, Render& render)
     actualBullet->Draw(render);
 
     render.SetPosition(player->GetPosition());
-    for (auto& enemyData : actualEnemy->GetEnemys())
-    {
-        render.SetPosition(enemyData.obj_2D->GetGLfloat());
 
-        //特定の座標に達した場合、ゲームオーバー
-        if (enemyData.m_posY <= kGameOverPosY)
+    for (auto& enemyData : actualEnemy->GetEnemysRef())
+    {
+        actualCollision->Update(actualBullet, enemyData);
+        
+        // 敵が当たられていない場合のみ描画とゲームオーバーチェック
+        if(!enemyData.isHit)
         {
-            ChangeScene("Result");
+            render.SetPosition(enemyData.obj_2D->GetGLfloat());
+            
+            //特定の座標に達した場合、ゲームオーバー
+            if (enemyData.m_posY <= kGameOverPosY)
+            {
+                ChangeScene("Result");
+            }
         }
     }
 
     //敵が全滅した場合、ゲームクリア
-    if(actualEnemy->GetEnemys().size() == 0)
+    int activeEnemies = 0;
+    for (const auto& enemyData : actualEnemy->GetEnemysRef())
+    {
+        if (!enemyData.isHit)
+        {
+            activeEnemies++;
+        }
+    }
+    
+    if(activeEnemies == 0)
     {
         ChangeScene("Result");
     }

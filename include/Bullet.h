@@ -15,6 +15,11 @@ public:
     void Draw(Render& render);
     void Update();
     void ClearBullet();
+    
+    GLfloat GetBulletPosX() const {return m_posX;}
+    GLfloat GetBulletPosY() const {return m_posY;}
+    bool GetIsShot() const {return isShot;}
+    GLfloat GetSize() const {return obj_2D->GetSizeValue();}
  
 private:
     bool isShot;//撃てるかどうか

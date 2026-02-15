@@ -8,6 +8,7 @@ struct EnemyData
     bool isActivity;
     GLfloat m_posX;
     GLfloat m_posY;
+    bool isHit = false;
 };
 
 class Enemy : public CharacterBase
@@ -28,6 +29,8 @@ public:
     void Draw() override;
 
     const std::vector<EnemyData> GetEnemys() const { return vEnemys;}
+    
+    std::vector<EnemyData>& GetEnemysRef() { return vEnemys;}
 
 private:
     static constexpr GLfloat MAX_MOVE_SPEED = 0.01f;
