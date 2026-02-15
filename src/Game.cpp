@@ -41,6 +41,18 @@ void Game::Update(GLFWwindow* window, Render& render)
     for (auto& enemyData : actualEnemy->GetEnemys())
     {
         render.SetPosition(enemyData.obj_2D->GetGLfloat());
+
+        //特定の座標に達した場合、ゲームオーバー
+        if (enemyData.m_posY <= kGameOverPosY)
+        {
+            ChangeScene("Result");
+        }
+    }
+
+    //敵が全滅した場合、ゲームクリア
+    if(actualEnemy->GetEnemys().size() == 0)
+    {
+        ChangeScene("Result");
     }
 
     ChangeResult(window);

@@ -22,4 +22,6 @@ private:
 
     std::shared_ptr<CharacterBase> player = NULL;
     std::shared_ptr<Player> actualPlayer = NULL;
+
+    static constexpr GLfloat kGameOverPosY = -0.8f;
 };

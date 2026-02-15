@@ -25,13 +25,13 @@ public:
 
     void Shot()override;
 
-    void  Draw() override;
+    void Draw() override;
 
     const std::vector<EnemyData> GetEnemys() const { return vEnemys;}
 
 private:
     static constexpr GLfloat MAX_MOVE_SPEED = 0.01f;
-    static constexpr GLfloat kAddPosY = 0.01f;
+    static constexpr GLfloat kAddPosY = 0.02f;
     static constexpr int kMaxEnemyX = 10;
     static constexpr int kMaxEnemyY = 4;
 

@@ -9,6 +9,16 @@
 #include "Render.h"
 #include <iostream>
 
+Render::Render()
+{
+
+}
+
+Render::~Render()
+{
+
+}
+
 void Render::Initialize(const char* path)
 {
     m_objectCount = 0;
@@ -48,4 +58,10 @@ void Render::SetPosition(std::vector<GLfloat> objectPos)
         m_positions.push_back(objectPos[i]);
     }
     m_objectCount++;
+}
+
+void Render::ResetPosition()
+{
+    m_positions.clear();
+    m_objectCount = 0;
 }

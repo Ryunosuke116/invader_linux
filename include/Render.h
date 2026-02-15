@@ -5,11 +5,12 @@
 class Render
 {
 public:
+    Render();
+    ~Render();
     void Initialize(const char* path);
     void Update(const char* path);
     void Draw();
-    void ResetPosition() {m_positions.clear();}
-
+    void ResetPosition();
     void SetPosition(std::vector<GLfloat> objectPos);
     std::vector<GLfloat> GetPosition() {return m_positions;}
     int GetObjectCount() {return m_objectCount;}

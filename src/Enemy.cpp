@@ -18,6 +18,8 @@ void Enemy::Initialize()
     GLfloat startPointX = -0.9f;
     GLfloat addPosY = 1.0f;
 
+    vEnemys.clear();
+
     for (int j = 0; j < kMaxEnemyY; j++)
     {
         for (int i = 0; i < kMaxEnemyX; i++)
@@ -107,6 +109,5 @@ void Enemy::CheckWindowEdge()
 
 void Enemy::Draw()
 {
-
     std::cerr << "pos_X" << (m_posX) << "\n";
 }
